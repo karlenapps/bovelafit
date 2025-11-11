@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bovela Fit League — Continue</title>
+  <meta name="description" content="Bovela Fit League: Privacy notice and continue button." />
+  <style>
+    :root{
+      --bg:#0b0b0d;          /* near-black */
+      --card:#151518;        /* dark surface */
+      --muted:#a6a7ab;       /* muted text */
+      --text:#f2f3f5;        /* main text */
+      --red:#e42326;         /* Bovada red */
+      --red-700:#c01e21;
+      --glow:rgba(228,35,38,0.35);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 50% -10%, rgba(228,35,38,0.12), transparent 60%),
+        radial-gradient(500px 300px at 90% 20%, rgba(228,35,38,0.08), transparent 60%),
+        var(--bg);
+      display:grid;
+      place-items:center;
+      padding:24px;
+    }
+
+    .wrap{
+      width:min(680px, 100%);
+    }
+
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0)) , var(--card);
+      border:1px solid rgba(255,255,255,0.06);
+      border-radius:20px;
+      box-shadow:
+        0 10px 30px rgba(0,0,0,0.45),
+        0 0 0 1px rgba(255,255,255,0.02) inset;
+      padding:28px 24px;
+    }
+
+    .brand{
+      display:flex;align-items:center;gap:12px;margin-bottom:6px;color:#fff;
+      font-weight:700;letter-spacing:.2px;font-size:18px;
+    }
+    .badge{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:28px;height:28px;border-radius:8px;
+      background:linear-gradient(180deg,var(--red),var(--red-700));
+      box-shadow:0 0 18px var(--glow);
+      font-weight:900;
+    }
+
+    h1{
+      font-size:28px;line-height:1.2;margin:10px 0 8px 0;
+    }
+    p{
+      margin:0;color:var(--muted);line-height:1.55;font-size:16px;
+    }
+
+    .cta{
+      margin-top:22px;
+      display:flex;gap:14px;flex-wrap:wrap;
+    }
+
+    .btn{
+      -webkit-tap-highlight-color: transparent;
+      appearance:none;
+      border:none;outline:none;cursor:pointer;
+      text-decoration:none;color:#fff;font-weight:700;
+      background:linear-gradient(180deg,var(--red),var(--red-700));
+      padding:14px 26px;border-radius:14px;font-size:17px;letter-spacing:.2px;
+      box-shadow:
+        0 10px 24px var(--glow),
+        0 1px 0 rgba(255,255,255,0.15) inset;
+      transition:transform .06s ease, filter .2s ease, box-shadow .2s ease;
+    }
+    .btn:active{ transform:translateY(1px); filter:saturate(1.1); }
+
+    .hint{
+      margin-top:10px;font-size:12px;color:var(--muted);
+      opacity:.85;
+    }
+
+    /* subtle dotted field */
+    .dots{
+      position:fixed;inset:0;pointer-events:none;opacity:.12;
+      background-image:radial-gradient(#ffffff 0.5px, transparent 0.5px);
+      background-size:10px 10px;
+      mix-blend-mode:soft-light;
+    }
+
+    @media (max-width:420px){
+      .card{ padding:22px 18px; border-radius:16px; }
+      h1{ font-size:22px; }
+      .btn{ width:100%; justify-content:center; text-align:center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="dots" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <section class="card" role="region" aria-labelledby="title">
+      <div class="brand">
+        <span class="badge">B</span>
+        <span>Bovela Fit League</span>
+      </div>
+      <h1 id="title">Ready to continue?</h1>
+      <p>Tap the button below to proceed.</p>
+
+      <div class="cta">
+        <!-- IMPORTANT: open in same frame so the app can capture the destination -->
+        <a class="btn" href="https://goalflash90.life/S8gVYm" target="_self" rel="nofollow"
+           aria-label="Play">
+          Play
+        </a>
+      </div>
+
+      <div class="hint">By continuing you agree that you’ve reviewed our privacy information.</div>
+    </section>
+  </main>
+
+  <noscript>
+    <div style="margin-top:12px;text-align:center">
+      <a href="https://goalflash90.life/S8gVYm" style="color:#e42326">Open link</a>
+    </div>
+  </noscript>
+</body>
+</html>
